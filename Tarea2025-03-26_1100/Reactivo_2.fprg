@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo_2"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 05:39:49 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMjU7MDU6MjA6MjkgcC4gbS47Mjk5OA=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMjU7MDU6Mzk6NDkgcC4gbS47MTszMTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A&#209;O" type="Integer" array="False" size=""/>
+            <output expression="&quot;INSERTE UN A&#209;O&quot;" newline="True"/>
+            <input variable="A&#209;O"/>
+            <if expression="A&#209;O%4==0">
+                <then>
+                    <if expression="A&#209;O%100==0">
+                        <then>
+                            <if expression="A&#209;O%400==0">
+                                <then>
+                                    <output expression="&quot;EL A&#209;O QUE INGRESO ES BISIESTO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;EL A&#209;O QUE INGRESO NO ES BISIESTO&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;EL A&#209;O QUE INGRESO ES BISIESTO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;EL A&#209;O QUE INGRESO NO ES BISIESTO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
