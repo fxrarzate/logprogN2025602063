@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo 2"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 04:49:54 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMzA7MDI6NTY6NTkgcC4gbS47MzAwMw=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDMtMzA7MDQ6NDk6NTQgcC4gbS47MTszMTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa tu edad&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad&gt;=4 and edad&lt;=18">
+                <then>
+                    <output expression="&quot;el precio es:$200&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;18">
+                        <then>
+                            <output expression="&quot;el precio es:$500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;el precio es: gratis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
