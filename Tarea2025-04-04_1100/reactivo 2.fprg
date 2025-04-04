@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagrama pizzeria"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 10:19:13 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDM7MDk6MzA6MDkgcC4gbS47Mjk5OA=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDM7MTA6MTk6MTMgcC4gbS47MTszMTAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizza, ingredientes" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;quiere una pizza vegetariana? responda con la palabra vegetariana de ser el caso, o con la palabra normal&quot;" newline="True"/>
+            <input variable="pizza"/>
+            <if expression="pizza=&quot;vegetariana&quot;">
+                <then>
+                    <output expression="&quot;elija su ingrediente&quot;" newline="True"/>
+                    <output expression="&quot;pimiento&quot;" newline="True"/>
+                    <output expression="&quot;tofu&quot;" newline="True"/>
+                    <input variable="ingredientes"/>
+                    <if expression="ingredientes=&quot;pimiento&quot;">
+                        <then>
+                            <output expression="&quot;su pizza es vegetariana y contiene los siguientes ingredientes:mozzarella,tomate y pimiento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ingredientes=&quot;tofu&quot;">
+                                <then>
+                                    <output expression="&quot;su pizza es vegetariana y contiene los siguientes ingredientes:mozzarella,tomate y tofu&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ese ingrediente no existe&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="pizza=&quot;normal&quot;">
+                        <then>
+                            <output expression="&quot;elija sus ingredientes&quot;" newline="True"/>
+                            <output expression="&quot;peperoni&quot;" newline="True"/>
+                            <output expression="&quot;jamon&quot;" newline="True"/>
+                            <output expression="&quot;salmon&quot;" newline="True"/>
+                            <input variable="ingredientes"/>
+                            <if expression="ingredientes=&quot;peperoni&quot;">
+                                <then>
+                                    <output expression="&quot;su pizza es normal y contiene los siguientes ingredientes:mozzarella,tomate y peperoni&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="ingredientes=&quot;jamon&quot;">
+                                        <then>
+                                            <output expression="&quot;su pizza es normal y contiene los siguientes ingredientes:mozzarella,tomate y jamon&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="ingredientes=&quot;salmon&quot;">
+                                                <then>
+                                                    <output expression="&quot;su pizza es normal y contiene los siguientes ingredientes:mozzarella,tomate y salmon&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;ese ingrediente no existe&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;esa pizza no existe&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
