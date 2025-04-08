@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="programa factorial"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 09:03:34 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDg6MjM6MDcgcC4gbS47MzAwMQ=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6MDM6MzQgcC4gbS47MTszMTA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, numero, factorial" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;ingrese un numero entero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <assign variable="factorial" expression="factorial*i"/>
+            </for>
+            <output expression="&quot;el numero factorial es:&quot;" newline="False"/>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="reactivo2"/>
+        <attribute name="authors" value="iMile"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 09:39:30 p. m."/>
+        <attribute name="created" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6MDM6MzkgcC4gbS47MzAwNQ=="/>
+        <attribute name="edited" value="aU1pbGU7REVTS1RPUC0wMktISTdNOzIwMjUtMDQtMDc7MDk6Mzk6MzAgcC4gbS47MTszMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, numero1, numero2, operacion, numerosiguiente" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="numero1" expression="1"/>
+            <assign variable="numero2" expression="2"/>
+            <for variable="i" start="1" end="64" direction="inc" step="1">
+                <assign variable="numerosiguiente" expression="numero1+numero2"/>
+                <assign variable="numero1" expression="numero2"/>
+                <assign variable="numero2" expression="numerosiguiente"/>
+                <output expression="numerosiguiente" newline="False"/>
+                <output expression="&quot;,&quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
